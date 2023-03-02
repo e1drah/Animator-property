@@ -13,11 +13,11 @@ public class BoolController : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space)) && (animator.GetBool("isRotating")))
+        if ((Input.GetKeyDown(KeyCode.W)) && (animator.GetBool("isRotating")))
         {
             animator.SetBool("isRotating", false);
         }
-        else if ((Input.GetKeyDown(KeyCode.Space)) && (!animator.GetBool("isRotating")))
+        else if ((Input.GetKeyDown(KeyCode.W)) && (!animator.GetBool("isRotating")))
         {
             animator.SetBool("isRotating", true); 
         }
